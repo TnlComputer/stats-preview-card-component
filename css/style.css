@@ -7,7 +7,7 @@
   --h-transparent-white: hsla(0, 0%, 100%, 0.6);
   --font1: Inter;
   --font2: "Lexend Deca";
-  --header-img: url("/images/image-header-mobile.jpg");
+  --header-img: url(../images/image-header-mobile.jpg);
 }
 
 body {
@@ -39,10 +39,13 @@ img {
 .image-header {
   height: 314px;
   background-color: var(--soft-violet);
+  /* opacity: 0.3; */
   background-blend-mode: soft-light;
+
   background-position: center;
   background-size: cover;
   background-image: var(--header-img);
+
   -webkit-filter: brightness(.6);
   filter: brightness(.6);
 }
@@ -125,9 +128,9 @@ img {
   }
 }
 
-@media only screen and (min-width:900px) {
+@media only screen and (min-width:910px) {
   :root {
-    --header-img: url("/images/image-header-desktop.jpg");
+    --header-img: url(../images/image-header-desktop.jpg);
   }
 
   body {
@@ -164,7 +167,7 @@ img {
   color: var(--soft-violet);
 }
 
-.example {
+/* .example {
   display: -ms-grid;
   display: grid;
   -webkit-transition: all .5s;
@@ -177,4 +180,4 @@ img {
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
   background: -o-linear-gradient(top, white, black);
   background: linear-gradient(to bottom, white, black);
-}
+} */
